@@ -8,15 +8,7 @@ Antes de começar, verifique se você possui os seguintes softwares instalados:
 
 - **Docker** e **Docker Compose** para gerenciar o container do PostgreSQL
 
-# :cd: Clonagem
-
-``` bash
-# Clone o repositório para seu ambiente local usando o comando abaixo:
-
-git clone https://github.com/natalia284/desafio_magalu.git
-
-```
-# :game_die: Configuração do Banco de Dados
+# :game_die: Uso
 
 O banco de dados utilizado no projeto foi o PostgreSQL. Com o docker instalado, crie o contâiner com o comando a seguir. O servidor será iniciado automaticamente. 
 ``` bash
@@ -26,14 +18,16 @@ O banco de dados utilizado no projeto foi o PostgreSQL. Com o docker instalado, 
 docker compose up api --build
 
 ```
+# :open_file_folder: Arquitetura
 
-Caso queira reiniciar as configurações do banco, faça: 
-``` bash
+O projeto está dividido em algumas pastas:  
 
-# Reinicia as configurações do banco
+- Controllers: responsável por lidar com requisições HTTP e retornar respostas (JSON). 
+- Models: definem as entidades do sistema e interagem diretamente com o banco de dados via ActiveRecord (ORM). 
+- Repositories: centralizam consultas e operações no banco de dados, separando lógica de acesso aos dados.
+- Services: implementam a lógica de negócio e coordenam chamadas a repositórios e modelos. 
+- Db: contém migrações e esquema do banco.
 
-docker compose down
-
-```
+Além disso, optou-se por utilizar o Sinatra devido ao seu formato minimalista. 
 
 Desse modo, você pode acessar no Postman o caminho `http://127.0.0.1:9292/upload)` utilizando o método POST e na aba `body` adicionar o arquivo desejado. 
