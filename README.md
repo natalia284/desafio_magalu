@@ -23,9 +23,9 @@ docker compose up api --build
 O projeto está dividido em algumas pastas:  
 
 - Controllers: responsável por lidar com requisições HTTP e retornar respostas (JSON). 
-- Models: definem as entidades do sistema e interagem diretamente com o banco de dados via ActiveRecord (ORM). 
-- Repositories: centralizam consultas e operações no banco de dados, separando lógica de acesso aos dados.
-- Services: implementam a lógica de negócio e coordenam chamadas a repositórios e modelos. 
+- Models: define as entidades do sistema e interagem diretamente com o banco de dados via ActiveRecord (ORM). 
+- Repositories: centraliza consultas e operações no banco de dados, separando lógica de acesso aos dados.
+- Services: implementa a lógica de negócio e coordenam chamadas a repositórios e modelos. 
 - Db: contém migrações e esquema do banco.
 
 Além disso, optou-se por utilizar a biblioteca Sinatra devido ao seu formato minimalista. 
