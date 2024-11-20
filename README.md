@@ -8,7 +8,7 @@ Antes de começar, verifique se você possui os seguintes softwares instalados:
 
 - **Docker** e **Docker Compose** para gerenciar o container do PostgreSQL
 
-# :game_die: Uso
+# :gear: Uso
 
 O banco de dados utilizado no projeto foi o PostgreSQL. Com o docker instalado, crie o contâiner com o comando a seguir. O servidor será iniciado automaticamente. 
 ``` bash
