@@ -6,7 +6,6 @@ Este projeto é uma aplicação backend desenvolvida em Ruby, projetada para ger
 
 Antes de começar, verifique se você possui os seguintes softwares instalados:
 
-- **Ruby** (versão utilizada: 3.0.2)
 - **Docker** e **Docker Compose** para gerenciar o container do PostgreSQL
 
 # :cd: Clonagem
