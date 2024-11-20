@@ -28,6 +28,6 @@ O projeto está dividido em algumas pastas:
 - Services: implementam a lógica de negócio e coordenam chamadas a repositórios e modelos. 
 - Db: contém migrações e esquema do banco.
 
-Além disso, optou-se por utilizar o Sinatra devido ao seu formato minimalista. 
+Além disso, optou-se por utilizar a biblioteca Sinatra devido ao seu formato minimalista. 
 
 Desse modo, você pode acessar no Postman o caminho `http://127.0.0.1:9292/upload)` utilizando o método POST e na aba `body` adicionar o arquivo desejado. 
