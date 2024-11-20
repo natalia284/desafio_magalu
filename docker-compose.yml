@@ -1,0 +1,31 @@
+services: 
+  database:
+    image: postgres:12-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    networks:
+      - desafio-magalu-network
+
+  api:
+    image: ruby:3.2
+    working_dir: /usr/src/app
+    volumes: 
+      - .:/usr/src/app
+    command: sh -c "bundle install && rake db:migrate && rackup -o 0.0.0.0 -s puma"
+    ports: 
+      - 9292:9292
+    depends_on: 
+      - database
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    networks:
+      - desafio-magalu-network
+
+networks: 
+  desafio-magalu-network: 
+    driver: bridge  
