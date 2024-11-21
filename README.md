@@ -18,6 +18,16 @@ O banco de dados utilizado no projeto foi o PostgreSQL. Com o docker instalado, 
 docker compose up api --build
 
 ```
+
+Desse modo, você pode acessar no Postman o caminho `http://127.0.0.1:9292/upload` utilizando o método POST e na aba `body` adicionar o arquivo desejado. 
+
+# :rocket: Tecnologias
+
+- Sinatra: por se tratar de um framework minimalista, o Sinatra foi escolhido devido à sua simplicidade.
+- API REST: ele foi escolhido por ser um dos padrões mais conhecidos e usado no mercado. Além disso, ele é de fácil utilização.
+- PostgreSQL: oferece suporte a transações complexas e possui um bom desempenho para grandes volumes de dados.
+- Docker: foi usado para garantir que o ambiente fosse isolado e consistente, evitando instalações na máquina local. 
+
 # :open_file_folder: Arquitetura
 
 O projeto está dividido em algumas pastas:  
@@ -30,4 +40,4 @@ O projeto está dividido em algumas pastas:
 
 Além disso, optou-se por utilizar a biblioteca Sinatra devido ao seu formato minimalista. 
 
-Desse modo, você pode acessar no Postman o caminho `http://127.0.0.1:9292/upload` utilizando o método POST e na aba `body` adicionar o arquivo desejado. 
+# :bar_chart: 
