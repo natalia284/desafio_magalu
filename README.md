@@ -41,10 +41,49 @@ Este endpoint é responsável por processar arquivos enviados para o sistema, ar
 
 ## :link: URL
 
-```plaintext
-http://127.0.0.1:9292/upload 
+``` bash
 
+http://127.0.0.1:9292/upload
 
+```
+## :electric_plug: Método HTTP
 
+POST
+
+## :open_file_folder: Parâmetros
+
+O corpo da requisição deve conter o arquivo enviado no formato form-data com a seguinte chave: 
+
+- **file**: o arquivo txt a ser processado. 
+
+## :bookmark_tabs: Respostas
+
+``` bash
+
+[
+  {
+    "user_id": 1,
+    "name": "Zazarelli",
+    "orders": [
+      {
+        "order_id": 123,
+        "total": "1024.48",
+        "date": "2021-12-01",
+        "products": [
+          {
+            "product_id": 111,
+            "value": "512.24"
+          },
+          {
+            "product_id": 122,
+            "value": "512.24"
+          }
+        ]
+      }
+    ]
+  }
+]
+
+```
 
 
