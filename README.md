@@ -15,7 +15,7 @@ Antes de começar, verifique se você possui o Docker instalado.
 
 # :open_file_folder: Arquitetura
 
-O projeto está dividido em algumas camadas:  
+O projeto está dividido nas seguintes camadas:  
 
 - **Controllers**: responsável por lidar com requisições HTTP e retornar respostas (JSON). 
 - **Models**: define as entidades do sistema e interagem diretamente com o banco de dados. 
