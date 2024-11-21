@@ -24,7 +24,9 @@ O projeto está dividido em algumas camadas:
 
 # :gear: Uso
 
-Na raiz do projeto execute o comando abaixo. O servidor estará disponível em http://localhost:9292 
+Crie um arquivo na raiz do projeto com o nome `.env` e com o conteúdo do arquivo [.env.example](./.env.example). 
+
+Em seguida execute o comando abaixo. O servidor estará disponível em http://localhost:9292 
 
 
 
