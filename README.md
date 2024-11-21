@@ -15,7 +15,7 @@ Antes de começar, verifique se você possui os seguintes softwares instalados:
 - **PostgreSQL**: oferece suporte a transações complexas e possui um bom desempenho para grandes volumes de dados.
 - **Docker**: foi usado para garantir que o ambiente fosse isolado e consistente, evitando instalações na máquina local. 
 
-# :open_file_folder: Arquitetura
+# :open_file_folder: Estrutura
 
 O projeto está dividido em algumas pastas:  
 
