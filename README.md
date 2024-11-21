@@ -15,9 +15,9 @@ Antes de começar, verifique se você possui os seguintes softwares instalados:
 - **PostgreSQL**: oferece suporte a transações complexas e possui um bom desempenho para grandes volumes de dados.
 - **Docker**: foi usado para garantir que o ambiente fosse isolado e consistente, evitando instalações na máquina local. 
 
-# :open_file_folder: Estrutura
+# :open_file_folder: Arquitetura
 
-O projeto está dividido em algumas pastas:  
+O projeto está dividido em algumas camadas:  
 
 - **Controllers**: responsável por lidar com requisições HTTP e retornar respostas (JSON). 
 - **Models**: define as entidades do sistema e interagem diretamente com o banco de dados via ActiveRecord (ORM). 
