@@ -4,14 +4,12 @@ Este projeto é uma aplicação backend desenvolvida em Ruby, projetada para ger
 
 # :round_pushpin: Pré-Requisitos
 
-Antes de começar, verifique se você possui os seguintes softwares instalados:
-
-- **Docker** e **Docker Compose** para gerenciar o container do PostgreSQL
+Antes de começar, verifique se você possui o Docker instalado. 
 
 # :rocket: Tecnologias Escolhidas
 
 - **Sinatra**: por se tratar de um framework minimalista, escolhi o Sinatra foi escolhido devido à sua simplicidade.
-- **API REST**: escolhi esse padrão por ser um dos mais conhecidos no mercado. 
+- **Active Record**:  utilizei o Active Record devido a sua facilidade de gerenciamento de dados e manipulação de tabelas por meio de objetos Ruby. 
 - **PostgreSQL**: ele foi escolhido devido ao seu bom desempenho para grandes volumes de dados.
 - **Docker**: usei para garantir que o ambiente fosse isolado e consistente, evitando instalações na máquina local. 
 
@@ -20,13 +18,20 @@ Antes de começar, verifique se você possui os seguintes softwares instalados:
 O projeto está dividido em algumas camadas:  
 
 - **Controllers**: responsável por lidar com requisições HTTP e retornar respostas (JSON). 
-- **Models**: define as entidades do sistema e interagem diretamente com o banco de dados via ActiveRecord (ORM). 
+- **Models**: define as entidades do sistema e interagem diretamente com o banco de dados. 
 - **Repositories**: centraliza consultas e operações no banco de dados, separando lógica de acesso aos dados.
 - **Services**: implementa a lógica de negócio e coordenam chamadas a repositórios e modelos. 
 
 # :gear: Uso
 
-O banco de dados utilizado no projeto foi o PostgreSQL. Com o docker instalado, crie o contâiner com o comando a seguir. O servidor será iniciado automaticamente. 
+Na raiz do projeto execute o comando abaixo. O servidor estará disponível em: 
+
+```bash
+
+http://localhost:9292
+
+```
+
 ``` bash
 
 docker compose up api --build
