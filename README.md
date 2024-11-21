@@ -10,10 +10,10 @@ Antes de começar, verifique se você possui os seguintes softwares instalados:
 
 # :rocket: Tecnologias Escolhidas
 
-- **Sinatra**: por se tratar de um framework minimalista, o Sinatra foi escolhido devido à sua simplicidade.
-- **API REST**: ele foi escolhido por ser um dos padrões mais conhecidos e usado no mercado. Além disso, ele é de fácil utilização.
-- **PostgreSQL**: oferece suporte a transações complexas e possui um bom desempenho para grandes volumes de dados.
-- **Docker**: foi usado para garantir que o ambiente fosse isolado e consistente, evitando instalações na máquina local. 
+- **Sinatra**: por se tratar de um framework minimalista, escolhi o Sinatra foi escolhido devido à sua simplicidade.
+- **API REST**: escolhi esse padrão por ser um dos mais conhecidos no mercado. 
+- **PostgreSQL**: ele foi escolhido devido ao seu bom desempenho para grandes volumes de dados.
+- **Docker**: usei para garantir que o ambiente fosse isolado e consistente, evitando instalações na máquina local. 
 
 # :open_file_folder: Arquitetura
 
@@ -29,12 +29,20 @@ O projeto está dividido em algumas camadas:
 O banco de dados utilizado no projeto foi o PostgreSQL. Com o docker instalado, crie o contâiner com o comando a seguir. O servidor será iniciado automaticamente. 
 ``` bash
 
-# Para o docker com as configurações do banco: 
-
 docker compose up api --build
 
 ```
 
-Desse modo, você pode acessar no Postman o caminho `http://127.0.0.1:9292/upload` utilizando o método POST e na aba "Body" adicionar o arquivo desejado. 
+# :inbox_tray: Endpoint `/upload`
+
+Este endpoint é responsável por processar arquivos enviados para o sistema, armazenando as informações no banco de dados e retornando uma resposta estruturada no formato JSON.
+
+---
+
+## :link: URL
+
+```plaintext
+http://127.0.0.1:9292/upload
+
 
 
