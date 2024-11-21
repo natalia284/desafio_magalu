@@ -23,21 +23,19 @@ Desse modo, você pode acessar no Postman o caminho `http://127.0.0.1:9292/uploa
 
 # :rocket: Tecnologias
 
-- Sinatra: por se tratar de um framework minimalista, o Sinatra foi escolhido devido à sua simplicidade.
-- API REST: ele foi escolhido por ser um dos padrões mais conhecidos e usado no mercado. Além disso, ele é de fácil utilização.
-- PostgreSQL: oferece suporte a transações complexas e possui um bom desempenho para grandes volumes de dados.
-- Docker: foi usado para garantir que o ambiente fosse isolado e consistente, evitando instalações na máquina local. 
+- **Sinatra**: por se tratar de um framework minimalista, o Sinatra foi escolhido devido à sua simplicidade.
+- **API REST**: ele foi escolhido por ser um dos padrões mais conhecidos e usado no mercado. Além disso, ele é de fácil utilização.
+- **PostgreSQL**: oferece suporte a transações complexas e possui um bom desempenho para grandes volumes de dados.
+- **Docker**: foi usado para garantir que o ambiente fosse isolado e consistente, evitando instalações na máquina local. 
 
 # :open_file_folder: Arquitetura
 
 O projeto está dividido em algumas pastas:  
 
-- Controllers: responsável por lidar com requisições HTTP e retornar respostas (JSON). 
-- Models: define as entidades do sistema e interagem diretamente com o banco de dados via ActiveRecord (ORM). 
-- Repositories: centraliza consultas e operações no banco de dados, separando lógica de acesso aos dados.
-- Services: implementa a lógica de negócio e coordenam chamadas a repositórios e modelos. 
-- Db: contém migrações e esquema do banco.
+- **Controllers**: responsável por lidar com requisições HTTP e retornar respostas (JSON). 
+- **Models**: define as entidades do sistema e interagem diretamente com o banco de dados via ActiveRecord (ORM). 
+- **Repositories**: centraliza consultas e operações no banco de dados, separando lógica de acesso aos dados.
+- **Services**: implementa a lógica de negócio e coordenam chamadas a repositórios e modelos. 
+- **Db**: contém migrações e esquema do banco.
 
 Além disso, optou-se por utilizar a biblioteca Sinatra devido ao seu formato minimalista. 
-
-# :bar_chart: 
