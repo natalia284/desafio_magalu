@@ -23,7 +23,6 @@ O projeto está dividido em algumas pastas:
 - **Models**: define as entidades do sistema e interagem diretamente com o banco de dados via ActiveRecord (ORM). 
 - **Repositories**: centraliza consultas e operações no banco de dados, separando lógica de acesso aos dados.
 - **Services**: implementa a lógica de negócio e coordenam chamadas a repositórios e modelos. 
-- **Db**: contém migrações e esquema do banco.
 
 # :gear: Uso
 
