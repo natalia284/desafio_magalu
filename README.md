@@ -8,7 +8,7 @@ Antes de começar, verifique se você possui os seguintes softwares instalados:
 
 - **Docker** e **Docker Compose** para gerenciar o container do PostgreSQL
 
-# :rocket: Tecnologias
+# :rocket: Tecnologias Escolhidas
 
 - **Sinatra**: por se tratar de um framework minimalista, o Sinatra foi escolhido devido à sua simplicidade.
 - **API REST**: ele foi escolhido por ser um dos padrões mais conhecidos e usado no mercado. Além disso, ele é de fácil utilização.
