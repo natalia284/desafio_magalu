@@ -24,13 +24,9 @@ O projeto está dividido em algumas camadas:
 
 # :gear: Uso
 
-Na raiz do projeto execute o comando abaixo. O servidor estará disponível em: 
+Na raiz do projeto execute o comando abaixo. O servidor estará disponível em http://localhost:9292 
 
-```bash
 
-http://localhost:9292
-
-```
 
 ``` bash
 
