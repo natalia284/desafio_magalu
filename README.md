@@ -8,19 +8,6 @@ Antes de começar, verifique se você possui os seguintes softwares instalados:
 
 - **Docker** e **Docker Compose** para gerenciar o container do PostgreSQL
 
-# :gear: Uso
-
-O banco de dados utilizado no projeto foi o PostgreSQL. Com o docker instalado, crie o contâiner com o comando a seguir. O servidor será iniciado automaticamente. 
-``` bash
-
-# Para o docker com as configurações do banco: 
-
-docker compose up api --build
-
-```
-
-Desse modo, você pode acessar no Postman o caminho `http://127.0.0.1:9292/upload` utilizando o método POST e na aba "Body" adicionar o arquivo desejado. 
-
 # :rocket: Tecnologias
 
 - **Sinatra**: por se tratar de um framework minimalista, o Sinatra foi escolhido devido à sua simplicidade.
@@ -37,3 +24,18 @@ O projeto está dividido em algumas pastas:
 - **Repositories**: centraliza consultas e operações no banco de dados, separando lógica de acesso aos dados.
 - **Services**: implementa a lógica de negócio e coordenam chamadas a repositórios e modelos. 
 - **Db**: contém migrações e esquema do banco.
+
+# :gear: Uso
+
+O banco de dados utilizado no projeto foi o PostgreSQL. Com o docker instalado, crie o contâiner com o comando a seguir. O servidor será iniciado automaticamente. 
+``` bash
+
+# Para o docker com as configurações do banco: 
+
+docker compose up api --build
+
+```
+
+Desse modo, você pode acessar no Postman o caminho `http://127.0.0.1:9292/upload` utilizando o método POST e na aba "Body" adicionar o arquivo desejado. 
+
+
