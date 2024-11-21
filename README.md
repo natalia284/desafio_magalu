@@ -54,9 +54,9 @@ POST
 
 O corpo da requisição deve conter o arquivo enviado no formato form-data com a seguinte chave: 
 
-- **file**: o arquivo txt a ser processado. 
+- **file**: o arquivo txt a ser processado.
 
-## :bookmark_tabs: Respostas
+## :bookmark_tabs: Modelo de Resposta
 
 ``` bash
 
