@@ -37,5 +37,3 @@ O projeto está dividido em algumas pastas:
 - **Repositories**: centraliza consultas e operações no banco de dados, separando lógica de acesso aos dados.
 - **Services**: implementa a lógica de negócio e coordenam chamadas a repositórios e modelos. 
 - **Db**: contém migrações e esquema do banco.
-
-Além disso, optou-se por utilizar a biblioteca Sinatra devido ao seu formato minimalista. 
