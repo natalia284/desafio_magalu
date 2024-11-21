@@ -19,7 +19,7 @@ docker compose up api --build
 
 ```
 
-Desse modo, você pode acessar no Postman o caminho `http://127.0.0.1:9292/upload` utilizando o método POST e na aba `body` adicionar o arquivo desejado. 
+Desse modo, você pode acessar no Postman o caminho `http://127.0.0.1:9292/upload` utilizando o método POST e na aba "Body" adicionar o arquivo desejado. 
 
 # :rocket: Tecnologias
 
