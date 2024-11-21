@@ -42,7 +42,9 @@ Este endpoint é responsável por processar arquivos enviados para o sistema, ar
 ## :link: URL
 
 ```plaintext
-http://127.0.0.1:9292/upload
+http://127.0.0.1:9292/upload 
+
+
 
 
 
